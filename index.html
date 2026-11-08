@@ -10,6 +10,20 @@
     <!-- Font Awesome untuk Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<!-- Project Detail Modal -->
+    <div id="projectModal" class="modal-wrapper">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+            <h3 id="modalTitle">Project Title</h3>
+            <p id="modalDesc">Deskripsi pekerjaan akan muncul di sini.</p>
+            
+            <div class="modal-gallery">
+                <div class="gallery-item bg-dark"><img id="modalImg1" src="" alt="Dokumentasi 1"></div>
+                <div class="gallery-item bg-dark"><img id="modalImg2" src="" alt="Dokumentasi 2"></div>
+                <div class="gallery-item bg-dark"><img id="modalImg3" src="" alt="Dokumentasi 3"></div>
+            </div>
+        </div>
+    </div>
 <body>
 
     <!-- Layar Loading -->
@@ -69,23 +83,35 @@
         </div>
     </section>
 
-    <!-- About Section -->
+  <!-- About Section -->
     <section id="about" class="about reveal">
-        <h2 class="section-title">About Me</h2>
+        <!-- Hapus <h2 class="section-title">About Me</h2> jika Anda memang tidak ingin ada teks About Me di atasnya -->
         <div class="about-grid">
+            
+            <!-- FOTO ANDA DI KIRI -->
             <div class="about-image">
-                <div class="image-placeholder-large"></div>
+                <!-- Pastikan nama file "ALDO FOTO.jpeg" sesuai dengan file Anda -->
+                <img src="EDU.jpeg" alt="Foto Aldo Pratama Putra" class="profile-pic-large">
             </div>
+            
+          <!-- TEKS DI KANAN -->
             <div class="about-text">
-                <div class="about-desc">
-                    <div>
-                        <h3>Who Am I</h3>
-                        <p>Saya adalah lulusan D4 Teknik Elektronika Politeknik Negeri Malang yang berfokus pada otomasi industri, PLC, dan sistem kontrol elektrikal.</p>
+                <div class="about-desc-full">
+                    <h3 class="title-large">MY EDUCATION</h3>
+                    
+                    <!-- TEMPLATE LOGO INSTANSI KECIL -->
+                                <div class="education-logo-wrapper">
+                        <!-- Ganti src dengan file logo Anda (misal: logo-polinema.png) -->
+                        <img src="LOGO POLI.jpg" alt="Logo Instansi" class="small-inst-logo">
+                        <div class="education-inst-info">
+                            <h4>Politeknik Negeri Malang</h4>
+                            <h5>D4 Teknik Elektronika</h5>
+                            <p class="gpa">GPA: 3.52/4.00</p>
+                            <p class="years">[2022 - 2026]</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>My Approach</h3>
-                        <p>Saya berorientasi pada standar keselamatan kerja, efisiensi operasional, dan keandalan sistem dalam melakukan troubleshooting maupun perancangan skematik kelistrikan.</p>
-                    </div>
+
+                    <p class="desc-large">Selama menempuh pendidikan di Program Studi D4 Teknik Elektronika, saya mempelajari dan mengembangkan kompetensi di bidang elektronika, instrumentasi, sistem kendali, mikrokontroler, serta otomasi. Proses perkuliahan juga memberikan pengalaman dalam mengerjakan proyek, praktikum, dan penelitian yang berorientasi pada penerapan teknologi di dunia nyata.</p>
                 </div>
                 
                 <div class="personal-details">
@@ -110,95 +136,131 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="experience reveal">
-        <h2 class="section-title">Work Experience</h2>
+        <h2 class="section-title">Education History</h2>
         <div class="timeline">
             
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">Jul 2025 - Dec 2025</span>
-                    <h3>Quality Control - Elektrik</h3>
-                    <h4>INDUSTRI KERETA API (PERSERO)</h4>
-                    <p>Melakukan inspeksi kualitas dan pengujian kelayakan komponen kelistrikan gerbong kereta sesuai standar manufaktur industri. Merancang dan memvalidasi diagram jalur kelistrikan menggunakan AutoCAD Electrical, serta melakukan maintenance sistem otomasi di kereta.</p>
+                    <span class="date">2010 - 2016</span>
+                    <h3>Sekolah Dasar Pawyatan Daha</h3>
+                    <h4>Kota Kediri</h4>
+                     <p>Aktif mengikuti ekstrakulikuler keolahragaan, mengikuti lomba lomba tingkat kota dan aktif dalam event drumband sekolah hingga provinsi.</p>
                     <div class="tags">
-                        <span>Quality Control</span>
-                        <span>AutoCAD Electrical</span>
-                        <span>Maintenance</span>
-                        <span>Otomasi</span>
-                    </div>
-                </div>
-            </div>
+                      </div>
 
+            </div>
+        <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2016 - 2019</span>
+                    <h3>Sekolah Menengah Pertama Negeri 2</h3>
+                    <h4>Kota Kediri</h4>                  
+                    <p>Mengikuti berbaga perlombaan keolahragaan dan aktif dalam akademik.</p>
+                    <div class="tags">
+                                    </div>
+            </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">2022 - 2024</span>
-                    <h3>Ketua Humas</h3>
-                    <h4>HIMPUNAN MAHASISWA ELEKTRONIKA</h4>
-                    <p>Memimpin Divisi Humas dalam merencanakan dan mengeksekusi strategi komunikasi internal serta eksternal guna melancarkan berbagai acara himpunan dan memperkuat relasi strategis kampus.</p>
+                    <span class="date">2019 - 2022</span>
+                    <h3>Sekolah Menengah Atas Negeri 4</h3>
+                    <h4>Ilmu Pengetahuan Alam / Kota Kediri</h4>
+                    <p>Mengikuti berbagai event seperti baris beraris, pengibaran bendera merah putih, kepanitiaan dan volunteer acara sekolah serta aktif pada ekstrakulikuler keolahragaan.<p>
                     <div class="tags">
-                        <span>Public Relations</span>
-                        <span>Leadership</span>
-                        <span>Event Management</span>
-                    </div>
-                </div>
+                                    </div>
             </div>
-
+               <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2019 - 2022</span>
+                    <h3>Politeknik Negeri Malang</h3>
+                    <h4>D4 Teknik Elektronika / Kota Malang</h4>
+                    <p>Aktif mengikuti program kerja himpunan, mengikuti berbagai seminar, aktif kepanitian serta mengerjakan tugas dan project project.</p>
+                    <div class="tags">
+                        <span>Himpunan</span>
+                        <span>Project</span>
+                        <span>Kepanitiaan</span>
+                                    </div>
+            </div>
         </div>
     </section>
 
     <!-- Tech Stack Section -->
+   <!-- Tech Stack Section -->
     <section id="skills" class="skills reveal">
-        <h2 class="section-title">My Tech Stack & Skills</h2>
+        <h2 class="section-title">My Skills</h2>
         
-        <div class="skill-category">
-            <div class="category-info">
-                <h3>Engineering & Automation</h3>
-                <p>Keahlian teknis yang saya kuasai dalam bidang kelistrikan dan kontrol industri.</p>
+        <div class="skills-split-container">
+            <!-- SISI KIRI: HARD SKILLS -->
+            <div class="skills-column">
+                <h3 class="skills-subtitle"><i class="fa-solid fa-code"></i> Hard Skills</h3>
+                <div class="skill-grid-split">
+                    <div class="skill-box"><i class="fa-solid fa-laptop-code"></i> PLC Programming</div>
+                    <div class="skill-box"><i class="fa-solid fa-microchip"></i> Embedded Systems</div>
+                    <div class="skill-box"><i class="fa-solid fa-bolt"></i> Elektronika Daya</div>
+                    <div class="skill-box"><i class="fa-solid fa-toolbox"></i> Electrical Software</div>
+                    <div class="skill-box"><i class="fa-solid fa-code"></i> Maintenance</div>
+                    <div class="skill-box"><i class="fa-solid fa-robot"></i> Instrumentasi & Otomasi</div>
+                </div>
             </div>
-            <div class="skill-grid">
-                <div class="skill-box"><i class="fa-solid fa-laptop-code"></i> PLC Programming</div>
-                <div class="skill-box"><i class="fa-solid fa-microchip"></i> Embedded Systems</div>
-                <div class="skill-box"><i class="fa-solid fa-bolt"></i> Elektronika Daya</div>
-                <div class="skill-box"><i class="fa-solid fa-toolbox"></i> AutoCAD Electrical</div>
+
+            <!-- GARIS PEMISAH DI TENGAH -->
+            <div class="skills-divider"></div>
+
+            <!-- SISI KANAN: SOFT SKILLS -->
+            <div class="skills-column">
+                <h3 class="skills-subtitle"><i class="fa-solid fa-users"></i> Soft Skills</h3>
+                <div class="skill-grid-split">
+                    <div class="skill-box"><i class="fa-solid fa-comments"></i> Komunikasi Efektif</div>
+                    <div class="skill-box"><i class="fa-solid fa-people-group"></i> Kerja Tim</div>
+                    <div class="skill-box"><i class="fa-solid fa-lightbulb"></i> Problem Solving</div>
+                    <div class="skill-box"><i class="fa-solid fa-clock"></i> Manajemen Waktu</div>
+                    <div class="skill-box"><i class="fa-solid fa-users"></i> Kepemimpinan</div>
+                    <div class="skill-box"><i class="fa-solid fa-comments"></i> Public Speaking</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+   <!-- Projects Section -->
     <section id="projects" class="projects reveal">
-        <h2 class="section-title">Selected Works</h2>
+        <h2 class="section-title">My Experience</h2>
         <div class="project-grid">
             
+            <!-- KOTAK PROJECT 1 -->
             <div class="project-card">
-                <div class="project-img bg-dark"></div>
+                <img src="INKA.png" alt="Cover INKA" class="project-img" style="width: 100%; height: 200px; object-fit: cover;">
                 <div class="project-info">
-                    <h3>Sistem Hidroponik Tenaga Surya</h3>
-                    <p>Sistem monitoring dan kontrol nutrisi otomatis untuk selada dengan panel surya 100 Wp dan mikrokontroler ESP32.</p>
-                    <a href="#" class="btn btn-outline btn-full">View Details</a>
+                    <h3>PT Industri Kereta Api (Internship)</h3>
+                    <p>Quality Control Electric Internship.</p>
+                    <button class="btn btn-outline btn-full" onclick="openModal('project1')">View Details</button>
                 </div>
             </div>
 
+            <!-- KOTAK PROJECT 2 -->
             <div class="project-card">
-                <div class="project-img bg-dark"></div>
+                <img src="BOLO.jpeg" alt="Cover INKA" class="project-img" style="width: 100%; height: 200px; object-fit: cover;">
                 <div class="project-info">
-                    <h3>Custom Electric Bicycle</h3>
-                    <p>Modifikasi sepeda standar menjadi sepeda listrik kustom dengan integrasi sistem baterai dan kontrol motor.</p>
-                    <a href="#" class="btn btn-outline btn-full">View Details</a>
+                    <h3>Penyiraman Bibit Bawang Merah</h3>
+                    <p>Rancang Bangun dan Implementasi Pompa Air Otomatis Bertenaga Surya untuk Penyiraman Bibit Bawang Merah di UD.Bolo Tani.</p>
+                    <button class="btn btn-outline btn-full" onclick="openModal('project2')">View Details</button>
                 </div>
             </div>
 
+            <!-- KOTAK PROJECT 3 -->
             <div class="project-card">
-                <div class="project-img bg-dark"></div>
+                <img src="LOGO HME.jpg" alt="Cover INKA" class="project-img" style="width: 100%; height: 200px; object-fit: cover;">
                 <div class="project-info">
-                    <h3>IoT Sensor Kalibrasi</h3>
-                    <p>Integrasi sensor suhu DS18B20, sensor TDS, dan PZEM-017 menggunakan metode kalibrasi regresi linier.</p>
-                    <a href="#" class="btn btn-outline btn-full">View Details</a>
+                    <h3>Himpunan & Organisasi</h3>
+                    <p>Himpunan Mahasiswa Elektro.</p>
+                    <button class="btn btn-outline btn-full" onclick="openModal('project3')">View Details</button>
                 </div>
             </div>
 
@@ -208,26 +270,59 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+   <!-- Contact Section -->
     <section id="contact" class="contact reveal">
         <h2 class="section-title">Contact Me</h2>
-        <div class="contact-form-container">
-            <p>Send an Email directly.</p>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label>NAME</label>
-                    <input type="text" placeholder="John Doe">
+        
+        <div class="contact-container">
+            <p class="contact-subtitle">Mari terhubung! Silakan hubungi saya secara langsung melalui platform di bawah ini.</p>
+            
+            <div class="contact-grid">
+                
+                <!-- Email -->
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p>aldo.pratamap.157@gmail.com</p>
+                    <a href="mailto:aldo.pratamap.157@gmail.com" class="btn btn-primary btn-sm">Send Email</a>
                 </div>
-                <div class="form-group">
-                    <label>EMAIL</label>
-                    <input type="email" placeholder="johndoe@example.com">
+
+                <!-- WhatsApp -->
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h4>WhatsApp</h4>
+                    <p>0857-8461-7383</p>
+                    <!-- Menggunakan wa.me dengan kode negara 62 -->
+                    <a href="https://wa.me/6285784617383" target="_blank" class="btn btn-primary btn-sm">Chat WA</a>
                 </div>
-                <div class="form-group">
-                    <label>MESSAGE</label>
-                    <textarea rows="5" placeholder="Your message here..."></textarea>
+
+                <!-- LinkedIn -->
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <h4>LinkedIn</h4>
+                    <p>Aldo Pratama Putra</p>
+                    <!-- Ganti link di bawah dengan link profil LinkedIn Anda -->
+                    <a href="https://www.linkedin.com/in/aldo-pratama-7a9253320?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="btn btn-primary btn-sm">Visit Profile</a>
                 </div>
-                <button type="submit" class="btn btn-primary btn-full">SEND MESSAGE</button>
-            </form>
+
+                <!-- Instagram -->
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <h4>Instagram</h4>
+                    <p>@aldopratamap</p>
+                    <!-- Ganti link di bawah dengan link Instagram Anda -->
+                    <a href="https://instagram.com/aldopratamap" target="_blank" class="btn btn-primary btn-sm">Visit Profile</a>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -321,6 +416,68 @@
             const chatWidget = document.getElementById('chatWidget');
             chatWidget.style.display = chatWidget.style.display === 'flex' ? 'none' : 'flex';
         }
+        // 5. PROJECT DATA & MODAL LOGIC
+        const projectsData = {
+            project1: {
+                title: "PT Industri Kereta Api (Persero)",
+                desc: "Selama menjalani kegiatan magang di PT Industri Kereta Api (Persero) sebagai Quality Control - Elektrik, saya bertanggung jawab melaksanakan inspeksi kualitas (Quality Control) dan pengujian kelayakan komponen serta sistem kelistrikan internal pada gerbong kereta sesuai dengan standar manufaktur industri. Tugas saya mencakup pelaksanaan inspeksi rutin, preventive maintenance, dan troubleshooting pada sistem otomasi serta jalur kelistrikan gerbong. Selain itu, saya merancang dan memvalidasi diagram jalur kelistrikan (wiring diagram) menggunakan AutoCAD Electrical untuk memastikan kesesuaian dengan spesifikasi teknis operasional, serta melakukan rekapitulasi dan analisis data hasil inspeksi menggunakan Microsoft Excel dan platform berbasis web.",
+                
+                // UBAH BAGIAN INI SESUAI NAMA FILE FOTO ANDA
+                img1: "PKL 1.jpeg", 
+                img2: "PKL 2.jpeg",
+                img3: "PKL 3.jpeg"  
+            },
+            project2: {
+                title: "Penyiraman Bibit Bawang Merah",
+                desc: "Skripsi saya mengembangkan sistem penyiraman tanaman otomatis bertenaga surya (off-grid) untuk lahan pembibitan bawang merah di UD. Bolotani, menggantikan mesin pompa diesel manual berbahan bakar LPG.Sistem ini menggunakan mikrokontroler untuk mengatur penyiraman secara otomatis berdasarkan pembacaan kelembapan tanah dan suhu lingkungan, serta dilengkapi instrumen pemantauan daya baterai LiFePO4 dan debit air.Hasil pengujian menunjukkan sistem dapat panen energi secara efisien melalui panel surya, beroperasi dengan stabil saat menyuplai beban pompa, dan berhasil menekan biaya bahan bakar serta efisiensi tenaga kerja di lapangan.",
+                
+                // UBAH BAGIAN INI SESUAI NAMA FILE FOTO ANDA
+                img1: "SKRIPSI 1.jpeg",
+                img2: "SKRIPSI 2.jpeg",
+                img3: "SKRIPSI 3.jpeg"
+            },
+            project3: {
+                title: "Himpunan Mahasiswa Elektro",
+                desc: "Pada himpunan mahasiswa ini saya beberapa kali mengikuti acara dan kepanitian, salah satunya adalah upgrading staff muda dan skill and creatifity training. Pada beberapa program kerja himpunan, saya diberi tanggung jawab sebagai ketua bidang humas dimana saya akan mengarahkan anggota untuk membentuk komunikasi baik internal dan eksternal kampus.",
+                
+                // UBAH BAGIAN INI SESUAI NAMA FILE FOTO ANDA
+                img1: "SERTIF 1.png",
+                img2: "HME 1.jpeg",
+                img3: "SERTIF 2.png"
+            }
+        };
+
+        function openModal(projectId) {
+            const modal = document.getElementById('projectModal');
+            const data = projectsData[projectId];
+            
+            // Masukkan data ke dalam Modal
+            document.getElementById('modalTitle').textContent = data.title;
+            document.getElementById('modalDesc').textContent = data.desc;
+            
+            // Masukkan gambar dokumentasi
+            document.getElementById('modalImg1').src = data.img1;
+            document.getElementById('modalImg2').src = data.img2;
+            document.getElementById('modalImg3').src = data.img3;
+            
+            // Tampilkan Modal
+            modal.style.display = 'flex';
+            setTimeout(() => modal.classList.add('show'), 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('projectModal');
+            modal.classList.remove('show');
+            setTimeout(() => modal.style.display = 'none', 300);
+        }
+
+        // Tutup modal jika user menekan area luar kotak modal
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('projectModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        });
     </script>
 </body>
 </html>
