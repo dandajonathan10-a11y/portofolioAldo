@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldo Pratama Putra - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Layar Loading -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <h2>Aldo Pratama Putra</h2>
+            <p>PORTFOLIO LOADING</p>
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">PORTFOLIO.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+        <div class="nav-actions">
+            <i class="fa-regular fa-sun"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Aldo Pratama P.</h1>
+            <h2 class="typing-text"><span id="typewriter"></span><span class="cursor">|</span></h2>
+            <p>Lulusan Sarjana Terapan (D4) Teknik Elektronika Politeknik Negeri Malang dengan spesialisasi di bidang Otomasi Industri dan Sistem Kontrol Elektrikal. Memiliki pengalaman magang dalam Quality Control dan perancangan kelistrikan kereta, serta kompeten dalam pemrograman PLC, pembacaan skematik kontrol industri, serta troubleshooting sistem kelistrikan daya dan kontrol. Berorientasi pada efisiensi operasional dan standar keselamatan kerja industri. </p>
+            
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Explore Work <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="CV Aldo Pratama Putra.pdf" download="CV Aldo Pratama Putra" class="btn btn-outline">Download CV <i class="fa-solid fa-download"></i></a>
+            </div>
+
+            <div class="social-connect">
+                <span>CONNECT</span>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <!-- Ganti src dengan foto Anda -->
+            <img src="ALDO FOTO.jpeg" alt="Foto Aldo" class="image-placeholder" style="object-fit: cover;">
+            
+            <!-- Floating Badges -->
+            <div class="badge badge-1"><i class="fa-solid fa-microchip"></i> Electrical Engineering</div>
+            <div class="badge badge-2"><i class="fa-solid fa-code"></i> Electrical Development</div>
+            <div class="badge badge-3"><i class="fa-solid fa-graduation-cap"></i> D4 Teknik Elektronika</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about reveal">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-image">
+                <div class="image-placeholder-large"></div>
+            </div>
+            <div class="about-text">
+                <div class="about-desc">
+                    <div>
+                        <h3>Who Am I</h3>
+                        <p>Saya adalah lulusan D4 Teknik Elektronika Politeknik Negeri Malang yang berfokus pada otomasi industri, PLC, dan sistem kontrol elektrikal.</p>
+                    </div>
+                    <div>
+                        <h3>My Approach</h3>
+                        <p>Saya berorientasi pada standar keselamatan kerja, efisiensi operasional, dan keandalan sistem dalam melakukan troubleshooting maupun perancangan skematik kelistrikan.</p>
+                    </div>
+                </div>
+                
+                <div class="personal-details">
+                    <h3>Personal Details</h3>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="label">NAME</span>
+                            <span class="value">Aldo Pratama Putra</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">LOCATION</span>
+                            <span class="value">Kota Kediri, Jawa Timur</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">EDUCATION</span>
+                            <span class="value">Politeknik Negeri Malang (POLINEMA)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">DEGREE</span>
+                            <span class="value">D4 Teknik Elektronika</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience reveal">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Jul 2025 - Dec 2025</span>
+                    <h3>Quality Control - Elektrik</h3>
+                    <h4>INDUSTRI KERETA API (PERSERO)</h4>
+                    <p>Melakukan inspeksi kualitas dan pengujian kelayakan komponen kelistrikan gerbong kereta sesuai standar manufaktur industri. Merancang dan memvalidasi diagram jalur kelistrikan menggunakan AutoCAD Electrical, serta melakukan maintenance sistem otomasi di kereta.</p>
+                    <div class="tags">
+                        <span>Quality Control</span>
+                        <span>AutoCAD Electrical</span>
+                        <span>Maintenance</span>
+                        <span>Otomasi</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2022 - 2024</span>
+                    <h3>Ketua Humas</h3>
+                    <h4>HIMPUNAN MAHASISWA ELEKTRONIKA</h4>
+                    <p>Memimpin Divisi Humas dalam merencanakan dan mengeksekusi strategi komunikasi internal serta eksternal guna melancarkan berbagai acara himpunan dan memperkuat relasi strategis kampus.</p>
+                    <div class="tags">
+                        <span>Public Relations</span>
+                        <span>Leadership</span>
+                        <span>Event Management</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="skills" class="skills reveal">
+        <h2 class="section-title">My Tech Stack & Skills</h2>
+        
+        <div class="skill-category">
+            <div class="category-info">
+                <h3>Engineering & Automation</h3>
+                <p>Keahlian teknis yang saya kuasai dalam bidang kelistrikan dan kontrol industri.</p>
+            </div>
+            <div class="skill-grid">
+                <div class="skill-box"><i class="fa-solid fa-laptop-code"></i> PLC Programming</div>
+                <div class="skill-box"><i class="fa-solid fa-microchip"></i> Embedded Systems</div>
+                <div class="skill-box"><i class="fa-solid fa-bolt"></i> Elektronika Daya</div>
+                <div class="skill-box"><i class="fa-solid fa-toolbox"></i> AutoCAD Electrical</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects reveal">
+        <h2 class="section-title">Selected Works</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <div class="project-img bg-dark"></div>
+                <div class="project-info">
+                    <h3>Sistem Hidroponik Tenaga Surya</h3>
+                    <p>Sistem monitoring dan kontrol nutrisi otomatis untuk selada dengan panel surya 100 Wp dan mikrokontroler ESP32.</p>
+                    <a href="#" class="btn btn-outline btn-full">View Details</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img bg-dark"></div>
+                <div class="project-info">
+                    <h3>Custom Electric Bicycle</h3>
+                    <p>Modifikasi sepeda standar menjadi sepeda listrik kustom dengan integrasi sistem baterai dan kontrol motor.</p>
+                    <a href="#" class="btn btn-outline btn-full">View Details</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img bg-dark"></div>
+                <div class="project-info">
+                    <h3>IoT Sensor Kalibrasi</h3>
+                    <p>Integrasi sensor suhu DS18B20, sensor TDS, dan PZEM-017 menggunakan metode kalibrasi regresi linier.</p>
+                    <a href="#" class="btn btn-outline btn-full">View Details</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-outline">View More Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact reveal">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-form-container">
+            <p>Send an Email directly.</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>NAME</label>
+                    <input type="text" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label>EMAIL</label>
+                    <input type="email" placeholder="johndoe@example.com">
+                </div>
+                <div class="form-group">
+                    <label>MESSAGE</label>
+                    <textarea rows="5" placeholder="Your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Chatbot Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fa-solid fa-robot"></i> Aldo Assistant
+                <span class="online-status">Online</span>
+            </div>
+            <i class="fa-solid fa-xmark close-chat" onclick="toggleChat()"></i>
+        </div>
+        <div class="chat-body">
+            <div class="chat-bubble ai">
+                Halo! Saya adalah asisten AI Aldo. Ada yang bisa saya bantu terkait portofolio, pengalaman, atau project elektrikal?
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Ask me anything...">
+            <button><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+    <button class="chat-toggle-btn" onclick="toggleChat()">
+        <i class="fa-solid fa-sparkles"></i> AI
+    </button>
+
+    <!-- JAVASCRIPT UNTUK ANIMASI & CHAT -->
+    <script>
+        // 1. ANIMASI LOADING SCREEN
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.classList.add('fade-out');
+            }, 1500); // Tampil selama 1.5 detik
+        });
+
+        // 2. ANIMASI TYPING EFFECT
+        const textArray = ["Electrical Engineering", "Engineering Development"];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typeWriterElement = document.getElementById('typewriter');
+
+        function typeEffect() {
+            const currentText = textArray[textIndex];
+            
+            if (isDeleting) {
+                typeWriterElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typeWriterElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentText.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % textArray.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(typeEffect, typeSpeed);
+        }
+        
+        setTimeout(typeEffect, 1600); // Mulai ngetik setelah loading hilang
+
+        // 3. ANIMASI SCROLL REVEAL
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.reveal');
+            const windowHeight = window.innerHeight;
+            const revealPoint = 100;
+
+            reveals.forEach(reveal => {
+                const revealTop = reveal.getBoundingClientRect().top;
+                if (revealTop < windowHeight - revealPoint) {
+                    reveal.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        // 4. TOGGLE CHATBOT
+        function toggleChat() {
+            const chatWidget = document.getElementById('chatWidget');
+            chatWidget.style.display = chatWidget.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>
